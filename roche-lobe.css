@@ -1,0 +1,94 @@
+#roche-lobe {
+    position: relative;
+    width: 975px;
+    height: 600px;
+}
+
+#roche-lobe-left{
+	z-index:2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 600px;
+    height: 600px;
+    border: 5px dashed black;
+    -moz-border-radius: 340px 340px 15px 340px;
+         border-radius: 340px 340px 15px 340px;
+    -webkit-transform: rotate(-45deg);
+       -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+         -o-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+            
+	background: -webkit-radial-gradient(red, rgb(255, 99, 24), rgb(255, 181, 24), rgb(206, 99, 24));
+	background: -o-radial-gradient(red, rgb(255, 99, 24), rgb(255, 181, 24), rgb(206, 99, 24)); 
+	background: -moz-radial-gradient(red, rgb(255, 99, 24), rgb(255, 181, 24), rgb(206, 99, 24)); 
+	background: radial-gradient(red, rgb(255, 99, 24), rgb(255, 181, 24), rgb(206, 99, 24)); 
+}
+#roche-lobe-right {
+    position: absolute;
+	top:200px;
+    right: 0;
+    left: auto;
+    width: 200px;
+    height: 200px;
+	z-index:1;
+	
+    border: 5px dashed black;
+    -moz-border-radius: 250px 250px 250px 0;
+         border-radius: 250px 250px 250px 0;
+         
+    -webkit-transform: rotate(45deg);
+       -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+         -o-transform: rotate(45deg);
+            transform: rotate(45deg);
+}
+
+#roche-lobe-right:before {
+	content: "";
+	position: absolute;
+	top: 76px;
+	left: 76px;
+	width: 48px;
+	height: 48px;
+	
+	border-radius:100%;
+	
+	background: -webkit-radial-gradient(red, rgb(255, 99, 24), rgb(255, 181, 24), rgb(206, 99, 24));
+	background: -o-radial-gradient(red, rgb(255, 99, 24), rgb(255, 181, 24), rgb(206, 99, 24)); 
+	background: -moz-radial-gradient(red, rgb(255, 99, 24), rgb(255, 181, 24), rgb(206, 99, 24)); 
+	background: radial-gradient(red, rgb(255, 99, 24), rgb(255, 181, 24), rgb(206, 99, 24)); 
+}
+#roche-lobe-right:after {
+	content: "";
+	position:absolute;
+	top:155px;
+	left:-17px;
+	width: 0;
+	height: 0;
+	border-top: 5px solid transparent;
+	border-left: 145px solid rgb(206, 99, 24);
+	border-bottom: 5px solid transparent;
+	
+	
+    -webkit-transform: rotate(-35deg);
+       -moz-transform: rotate(-35deg);
+        -ms-transform: rotate(-35deg);
+         -o-transform: rotate(-35deg);
+            transform: rotate(-35deg);
+	
+}	
+#zero-age-main-sequence-star {
+    position: relative;
+    width: 600px;
+    height: 600px;
+    -moz-border-radius: 340px 340px 340px 340px;
+         border-radius: 340px 340px 340px 340px;
+         
+    -webkit-transform: rotate(45deg);
+       -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+         -o-transform: rotate(45deg);
+            transform: rotate(45deg);
+}
