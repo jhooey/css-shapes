@@ -1,9 +1,10 @@
+/*Roche Lobe container div*/
 #roche-lobe {
     position: relative;
     width: 975px;
     height: 600px;
 }
-
+/*This Creates the left side of the Roche Lobe*/
 #roche-lobe-left{
 	z-index:2;
     position: absolute;
@@ -11,9 +12,11 @@
     left: 0;
     width: 600px;
     height: 600px;
+    
     border: 5px dashed black;
     -moz-border-radius: 340px 340px 15px 340px;
          border-radius: 340px 340px 15px 340px;
+         
     -webkit-transform: rotate(-45deg);
        -moz-transform: rotate(-45deg);
         -ms-transform: rotate(-45deg);
@@ -25,6 +28,24 @@
 	background: -moz-radial-gradient(red, rgb(255, 99, 24), rgb(255, 181, 24), rgb(206, 99, 24)); 
 	background: radial-gradient(red, rgb(255, 99, 24), rgb(255, 181, 24), rgb(206, 99, 24)); 
 }
+
+/*This is the container that can hold your content within the Main Sequence Star*/
+#zero-age-main-sequence-star {
+    position: relative;
+    width: 600px;
+    height: 600px;
+    -moz-border-radius: 340px 340px 340px 340px;
+         border-radius: 340px 340px 340px 340px;
+     
+    /*To ensure that the contain doesn't show on a diagonal, we have to undo the rotation used in #roche-lobe-left*/     
+    -webkit-transform: rotate(45deg);
+       -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+         -o-transform: rotate(45deg);
+            transform: rotate(45deg);
+}
+
+/*This Creates the right side of the Roche Lobe*/
 #roche-lobe-right {
     position: absolute;
 	top:200px;
@@ -44,7 +65,7 @@
          -o-transform: rotate(45deg);
             transform: rotate(45deg);
 }
-
+/*This creates the white dwarf*/
 #roche-lobe-right:before {
 	content: "";
 	position: absolute;
@@ -60,6 +81,7 @@
 	background: -moz-radial-gradient(red, rgb(255, 99, 24), rgb(255, 181, 24), rgb(206, 99, 24)); 
 	background: radial-gradient(red, rgb(255, 99, 24), rgb(255, 181, 24), rgb(206, 99, 24)); 
 }
+/*This creates the 'accretion' flow*/
 #roche-lobe-right:after {
 	content: "";
 	position:absolute;
@@ -78,17 +100,4 @@
          -o-transform: rotate(-35deg);
             transform: rotate(-35deg);
 	
-}	
-#zero-age-main-sequence-star {
-    position: relative;
-    width: 600px;
-    height: 600px;
-    -moz-border-radius: 340px 340px 340px 340px;
-         border-radius: 340px 340px 340px 340px;
-         
-    -webkit-transform: rotate(45deg);
-       -moz-transform: rotate(45deg);
-        -ms-transform: rotate(45deg);
-         -o-transform: rotate(45deg);
-            transform: rotate(45deg);
 }
